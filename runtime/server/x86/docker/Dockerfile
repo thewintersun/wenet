@@ -1,5 +1,4 @@
 FROM ubuntu:latest
-MAINTAINER <zhendong.peng@mobvoi.com>
 ENV DEBIAN_FRONTEND=noninteractive
 RUN sed -i s@/archive.ubuntu.com/@/mirrors.tuna.tsinghua.edu.cn/@g /etc/apt/sources.list
 RUN apt-get update && apt-get install -y git cmake wget build-essential
